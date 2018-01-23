@@ -1,0 +1,18 @@
+#include	<stdio.h>
+
+int	my_str_islower(char *str)
+{
+  int   c;
+
+  c = 0;
+  if (str[0] == '\0' || str == NULL)
+    return (1);
+  while (str[c])
+    {
+      if (str[c] >= 'a' && str[c] <= 'z')
+        c++;
+      else
+        return (0);
+    }
+  return (1);
+}
